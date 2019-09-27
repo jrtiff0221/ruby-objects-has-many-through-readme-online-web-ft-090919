@@ -24,7 +24,7 @@ attr_accessor :name, :age
   end
   
   def waiters
-    Waiter.all.select { |waiter| waiter.customer == self }
+    meals.map {|meal| meal.waiter }
   end
 
 end
