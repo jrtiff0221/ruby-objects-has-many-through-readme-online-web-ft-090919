@@ -20,9 +20,6 @@ attr_accessor :name, :age
       meal.customer == self
     end
   
-  def new_meal(waiter, total, tip=0)
-    Meal.new(waiter, self, total, tip)
-  end
-   
+  
 
 end
