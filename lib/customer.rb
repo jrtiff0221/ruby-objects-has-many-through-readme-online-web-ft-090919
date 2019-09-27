@@ -20,6 +20,6 @@ attr_accessor :name, :age
   end
    
    def meals
-     Meal.all.length
+     
    end
 end
