@@ -19,7 +19,6 @@ attr_accessor :name, :age
     Meal.new(waiter, self, total, tip)
   
    def meals
-     do |meal|
-      meal.customer == self
+      Meal.all.length do 
     end
 end
