@@ -22,7 +22,7 @@ class Waiter
   end
   
   def best_tipper
-    m = meals.sort {|meal1, meal2| meal1.tip <=> meal2.tip}.first.customer
+    m = meals.sort {|meal1, meal2| meal2.tip <=> meal1.tip}.first.customer
   puts "\n\n\nm"
   puts m
 m
