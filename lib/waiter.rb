@@ -22,7 +22,7 @@ class Waiter
   end
   
   def best_tipper
-    meals.map {|meal| meal.tip }.max
+    meals.sort {|meal1, meal2| meal1.tip > meal2.tip}.first.customer
   
   end
   
